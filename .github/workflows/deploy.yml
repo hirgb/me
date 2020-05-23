@@ -9,4 +9,5 @@ jobs:
     steps:
     - name: copy-file
       run:
+        pwd
         cp README.md docs/
