@@ -7,7 +7,11 @@ jobs:
   deploy:
     runs-on: macOS-latest
     steps:
-    - name: copy-file
-      run:
-        pwd
-        cp README.md docs/
+    - name: deploy
+      run: |
+        echo $HOME
+        echo $GITHUB_REPOSITORY
+        ls $GITHUB_REPOSITORY
+        # rm -rf docs
+        # mkdir docs/
+        # cp README.md docs/
