@@ -1,0 +1,12 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: macOS-latest
+    steps:
+    - name: copy-file
+      run:
+        cp README.md docs/
